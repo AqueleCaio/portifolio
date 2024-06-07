@@ -180,3 +180,31 @@ $(function(){
   $('.navigation-close').hover(cursorhover,cursor);
 
 })
+
+$('#submit').click(() =>{
+ 
+  //seta um intervalo de 10 segundos para manter o botão escrito enviado e depois volta ao normal
+  $('#submit').html('Enviado!');
+  
+  setTimeout(() => {
+    $('#submit').html('Enviar');
+  }, 20000)
+});
+
+$('#myForm').on('submit', function(e) {
+        e.preventDefault();
+
+        $.ajax({
+            url : $(this).attr('action') || window.location.pathname,
+            type: "POST",
+            data: $(this).serialize(),
+            success: function (data) {
+                $("#myForm")[0].reset();
+                alert('Email enviado com sucesso!');
+            },
+            error: function (jXHR, textStatus, errorThrown) {
+                alert(errorThrown);
+            }
+        });
+    });
+
