@@ -1,9 +1,3 @@
-/*!
-  * Item: Willy Wonka Theme
-  * Description: Personal Portfolio Website Template
-  * Author/Developer: Sujal
-  * Version: v1
-  */
 @import url('https://fonts.googleapis.com/css?family=Raleway:300&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:500&display=swap');
@@ -169,48 +163,6 @@ body{
     opacity: 1;
     transform: scale(1.1);
 }
-.navigation-links{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-family:poppins;
-}
-.navigation-links a{
-    padding:10px;
-    text-decoration: none;
-    color: white;
-    font-size: 30px;
-    opacity: .7;
-    transition: all .4s ease;
-}
-.navigation-links a:hover{
-    opacity: 1;
-}
-.navigation-links a::before{
-    content: "";
-    position: absolute;
-    top:50%;
-    left: 50%;
-    display: flex;
-    justify-content: center;
-    transform: translate(-50%,-50%);
-    align-items: center;
-    font-size: 5em;
-    font-weight: 400;
-    font-family: monoton;
-    color:rgb(255, 255, 255,.1);
-    z-index: 1;
-    pointer-events: none;
-    opacity: 0;
-    letter-spacing: 100px;
-    transition: all .4s ease;
-}
-.navigation-links a:hover::before{
-    content: attr(data-text);
-    opacity: 1;
-    letter-spacing: 10px;
-}
 
 @keyframes breakeranimate{
    0%{ transform : translateX(-100%)}
@@ -351,26 +303,7 @@ body{
     opacity: 1;
     transform: scale(1.05);
 }
-#services{
-    position: relative;
-    background-color: #191919;
-}
 
-.services-heading{
-    height: auto;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-size: 45px;
-    font-family: raleway;
-    color: whitesmoke;
-    padding:10px;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    font-weight: 900;
-
-}
 .about-first-paragraph {
     display: flex;
     align-items: center;
@@ -465,7 +398,7 @@ body{
     border-radius: 10px;
     background: #035aa6;
 }
-.adobe-progress{
+.python-progress{
     position: absolute;
     top:10%;
     left:1%;
@@ -474,11 +407,11 @@ body{
     align-items: center;
     justify-content: center;
     transition: all .4s ease;
-    width:63%;
+    width:68%;
     border-radius: 10px;
     background: #035aa6;
 }
-.php-progress{
+.jquery-progress{
     position: absolute;
     top:10%;
     left:1%;
@@ -491,7 +424,7 @@ body{
     background: #035aa6;
     transition: all .4s ease;
 }
-.jquery-progress{
+.sql-progress{
     position: absolute;
     top:10%;
     left:1%;
@@ -504,7 +437,7 @@ body{
     border-radius: 10px;
     background: #035aa6;
 }
-.seo-progress{
+.english-progress{
     position: absolute;
     top:10%;
     left:1%;
@@ -512,7 +445,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width:60%;
+    width:62%;
     border-radius: 10px;
     transition: all .4s ease;
     background: #035aa6;
