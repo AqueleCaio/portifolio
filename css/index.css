@@ -619,6 +619,60 @@ padding-bottom: 40px;
     font-weight: 900;
 }
 
+/* Certificados */
+#certificados {
+    font-family: poppins;
+    margin: 40px auto;
+}
+
+.certificados-header h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.certificados-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.certificado {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.certificado-image-container {
+    width: 300px;
+    height: 300px;
+    margin: 40px 0;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease; /* Adiciona transição suave */
+}
+
+.certificado-image-container:hover {
+    transform: scale(1.1); /* Leve aumento */
+    box-shadow: 0 8px 16px rgba(97, 86, 255, 0.2); /* Efeito de sombra ao passar o mouse */
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.certificado-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem preencha o contêiner */
+}
+
+.certificado-descricao {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+
 /* Estilização da tela contato */
 
 #contact{
